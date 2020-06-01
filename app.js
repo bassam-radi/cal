@@ -10,7 +10,7 @@ app.get(("/"), (req, res) => res.sendfile(__dirname + "/index.html"))
 app.post(("/"), (req, res) =>{
     const num1 = +(req.body.number01);
     const num2 = +(req.body.number02);
-    const add = num1 + num2
+    const add = num1 + num2;
     res.send(add.toString())
 })
 
